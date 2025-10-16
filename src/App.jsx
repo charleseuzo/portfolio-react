@@ -9,9 +9,10 @@ function App() {
   return (
     <>
       <Schema />
-    <div className={styles.container}>
-      <Content />
-    </div>
+      <div className={styles.container}>
+        <Content />
+      </div>
+    </>
   );
 }
 
