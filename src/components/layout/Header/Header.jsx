@@ -1,6 +1,8 @@
+import styles from "./Header.module.css";
+
 function Header() {
   return (
-    <header className="">
+    <header className={styles.header}>
       <h1 className="text-2xl font-bold">MonSite</h1>
       <nav>
         <ul className="flex gap-4">
@@ -11,7 +13,7 @@ function Header() {
         </ul>
       </nav>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
