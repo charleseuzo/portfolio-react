@@ -23,6 +23,9 @@ function Hero() {
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
           Charles Pâquet
         </h1>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6">
+          Développeur Front-End
+        </h2>
       </Container>
     </section>
   );
