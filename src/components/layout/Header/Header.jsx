@@ -8,7 +8,14 @@ function Header() {
     >
       <Container>
         <nav className="flex flex-wrap justify-between">
-          <h1>Salut gros cave</h1>
+          <a href="/" className="w-1/5">
+            <img
+              src="/images/charles_paquet_logo.jpg"
+              alt="Photo de Charles"
+              className="object-cover"
+              loading="lazy"
+            />
+          </a>
           <ul className="flex gap-4">
             <li>À propos de moi</li>
             <li>Expériences professionelles</li>
