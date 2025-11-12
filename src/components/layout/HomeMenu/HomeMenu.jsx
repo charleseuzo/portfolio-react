@@ -3,10 +3,10 @@ import Container from "../Container/Container";
 import Cards from "../../ui/Cards";
 
 const dataHome = [
-  { title: "À propos de moi", link: "#a-propos" },
-  { title: "Mes expériences professionnelles", link: "#experience-pro" },
-  { title: "Mes formations académiques", link: "#formation" },
-  { title: "Mes compétences", link: "#competences" },
+  { title: "À propos de moi", link: "#a-propos", duration: "400" },
+  { title: "Mes expériences professionnelles", link: "#experience-pro", duration: "600" },
+  { title: "Mes formations académiques", link: "#formation", duration: "800" },
+  { title: "Mes compétences", link: "#competences", duration: "1000" },
 ];
 
 function HomeMenu() {
