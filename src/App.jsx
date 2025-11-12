@@ -6,6 +6,7 @@ import Hero from "./components/layout/Hero";
 import HomeMenu from "./components/layout/HomeMenu/HomeMenu";
 import Apropos from "./components/layout/Apropos";
 import Footer from "./components/layout/Footer";
+import ExperiencePro from "./components/layout/ExperiencePro";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +19,7 @@ function App() {
         <Hero />
         <HomeMenu />
         <Apropos />
+        <ExperiencePro />
       </main>
       <Footer />
     </>

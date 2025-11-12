@@ -20,8 +20,11 @@ function Hero() {
         />
       </picture>
       <Container className="relative z-10 text-center px-4">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-          Charles Pâquet
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6" data-aos="fade-in">
+          <span className="block">Charles Pâquet </span>
+          <span className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6">
+            Développeur Front-End
+          </span>
         </h1>
       </Container>
     </section>
