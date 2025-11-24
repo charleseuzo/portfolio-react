@@ -17,10 +17,18 @@ function Header() {
             />
           </a>
           <ul className="flex gap-4">
-            <li>À propos de moi</li>
-            <li>Expériences professionelles</li>
-            <li>Formations académiques</li>
-            <li>Compétences</li>
+            <li>
+              <a href="#a-propos">À propos de moi</a>
+            </li>
+            <li>
+              <a href="#experiencepro">Expériences professionelles</a>
+            </li>
+            <li>
+              <a href="#formations">Formations académiques</a>
+            </li>
+            <li>
+              <a href="#competences">Compétences</a>
+            </li>
           </ul>
           <ul className="flex gap-4">
             <li>
