@@ -4,8 +4,12 @@ import Cards from "../../ui/Cards";
 
 const dataHome = [
   { title: "À propos de moi", link: "#a-propos", duration: "400" },
-  { title: "Mes expériences professionnelles", link: "#experience-pro", duration: "600" },
-  { title: "Mes formations académiques", link: "#formation", duration: "800" },
+  {
+    title: "Mes expériences professionnelles",
+    link: "#experiencepro",
+    duration: "600",
+  },
+  { title: "Mes formations académiques", link: "#formations", duration: "800" },
   { title: "Mes compétences", link: "#competences", duration: "1000" },
 ];
 
