@@ -1,4 +1,6 @@
 .card {
-    width: 24%;
-    height: 300px;
+  width: 24%;
+  height: 300px;
+  display: flex;
+  transition: all 0.3s ease-out;
 }
