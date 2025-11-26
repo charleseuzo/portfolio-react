@@ -9,11 +9,11 @@ function Hero() {
       <picture>
         <source
           media="(min-width:1024px)"
-          srcSet="/public/images/hero-desktop.jpg"
+          srcSet="./images/hero-desktop.jpg"
         />
-        <source media="(min-width:640px)" srcSet="/images/hero-tablet.jpg" />
+        <source media="(min-width:640px)" srcSet="./images/hero-tablet.jpg" />
         <img
-          src="/images/hero-mobile.jpg"
+          src="./images/hero-mobile.jpg"
           alt="Photo de fond du hero"
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
@@ -39,7 +39,7 @@ function Hero() {
             Voir mes projets
           </a>
           <a
-            href="public/content/files/CV_Charles Pâquet 2025.pdf"
+            href="./content/files/CV_Charles Pâquet 2025.pdf"
             target="_blank"
             className="border border-white text-white font-semibold py-2 px-6 rounded-lg hover:bg-white/10 transition inline-flex items-center"  data-aos="fade-in" data-aos-duration="1200"
           >
