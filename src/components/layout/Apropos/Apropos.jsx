@@ -8,7 +8,7 @@ function Apropos() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="relative p-6 overflow-hidden" data-aos="fade-right">
             <img
-              src="/images/charles_a-propos.webp"
+              src="./images/charles_a-propos.webp"
               alt="Photo de Charles"
               className="object-cover"
               loading="lazy"

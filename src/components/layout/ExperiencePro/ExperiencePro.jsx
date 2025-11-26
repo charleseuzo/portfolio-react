@@ -5,21 +5,21 @@ import Boxes from "../../ui/Boxes/Boxes";
 const dataBox = [
   {
     title: "Développeur Front-End chez L'agence LB",
-    textePath: "/content/textes/agencelb.html",
+    textePath: "./content/textes/agencelb.html",
     duration: "800",
-    image: [{ src: "/images/logo-agencelb.png", alt: "L'agence LB" }],
+    image: [{ src: "./images/logo-agencelb.png", alt: "L'agence LB" }],
   },
   {
     title: "Programmeur/intégrateur de sites web chez Constella",
-    textePath: "/content/textes/constella.html",
+    textePath: "./content/textes/constella.html",
     duration: "1000",
-    image: [{ src: "/images/logo-constella.svg", alt: "Constella" }],
+    image: [{ src: "./images/logo-constella.svg", alt: "Constella" }],
   },
   {
     title: "Commis Fichiers Maîtres chez Groupe Touchette",
-    textePath: "/content/textes/touchette.html",
+    textePath: "./content/textes/touchette.html",
     duration: "1200",
-    image: [{ src: "/images/logo-touchette.jpg", alt: "Groupe Touchette" }],
+    image: [{ src: "./images/logo-touchette.jpg", alt: "Groupe Touchette" }],
   },
 ];
 
