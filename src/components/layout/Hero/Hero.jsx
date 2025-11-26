@@ -19,31 +19,29 @@ function Hero() {
           loading="lazy"
         />
       </picture>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/20"></div>
       <Container className="relative z-10 text-center px-4">
         <h1
-          className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6"
+          className="text-shadow text-4xl sm:text-5xl lg:text-6xl font-bold mb-6"
           data-aos="fade-in"
-        >
-          <span className="block">Charles Pâquet </span>
-          <span className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6">
-            Développeur Front-End
-          </span>
+        ><span className="text-xl sm:text-2xl lg:text-3xl font-bold mb-6">Développeur Front-End </span>
+          <span className="block">Charles Pâquet</span>
         </h1>
-        <p className="text-xl sm:text-2xl lg:text-3xl font-bold mb-6">
+        <p className="text-shadow text-white/90 text-xl sm:text-2xl lg:text-3xl font-bold mb-6" data-aos="fade-in" data-aos-duration="1000">
           Passionné par le développement web moderne, je transforme vos idées en
           applications performantes et élégantes.
         </p>
         <div className="flex flex-row flex-wrap content-center justify-center gap-x-5">
           <a
             href="/projets/"
-            className="bg-white hover:bg-gray-100 text-gray-800 font-bold py-2 px-4 border border-gray-400 rounded shadow"
+            className="bg-white text-black font-semibold py-2 px-6 rounded-lg shadow hover:bg-neutral-100 transition"  data-aos="fade-in" data-aos-duration="1200"
           >
             Voir mes projets
           </a>
           <a
             href="public/content/files/CV_Charles Pâquet 2025.pdf"
             target="_blank"
-            className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+            className="border border-white text-white font-semibold py-2 px-6 rounded-lg hover:bg-white/10 transition inline-flex items-center"  data-aos="fade-in" data-aos-duration="1200"
           >
             <svg
               className="fill-current w-4 h-4 mr-2"
