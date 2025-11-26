@@ -10,7 +10,7 @@ function Header() {
         <nav className="flex flex-wrap justify-between">
           <a href="/" className="w-1/5">
             <img
-              src="/images/charles_paquet_logo.jpg"
+              src="./images/charles_paquet_logo.jpg"
               alt="Photo de Charles"
               className="object-cover"
               loading="lazy"
