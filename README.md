@@ -1,16 +1,37 @@
-# React + Vite
+# Portfolio React – Charles Pâquet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue dans le dépôt de mon portfolio développé avec **React**, **Vite**, et **TailwindCSS**.  
+Ce site présente mes projets, mes compétences et mon parcours en tant que développeur Web.
 
-Currently, two official plugins are available:
+**Version en ligne :** https://charleseuzo.github.io/portfolio-react/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Technologies utilisées
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18** – Composants modernes, hooks, structure modulaire
+- **Vite** – Build ultra rapide et environnement de dev performant
+- **TailwindCSS** – UI responsive et design minimaliste
+- **AOS (Animate On Scroll)** – Animations fluides et légères
+- **GitHub Pages** – Déploiement simple et efficace
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Fonctionnalités principales
+
+- Interface entièrement responsive  
+- Animations au scroll (AOS)  
+- Présentation de mes projets avec pages détaillées  
+- Section compétences / services  
+- Contact via formulaire ou liens directs  
+- Design épuré, professionnel, orienté recrutement
+
+---
+
+## Installation & Utilisation
+
+Pour cloner le projet :
+
+```bash
+git clone https://github.com/charleseuzo/portfolio-react.git
+cd portfolio-react

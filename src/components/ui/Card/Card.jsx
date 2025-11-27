@@ -18,7 +18,7 @@ function Card({ title,link, duration }) {
     hover:-translate-y-1 hover:scale-[1.02]
     hover:shadow-2xl`} 
       data-aos="fade-up" data-aos-duration={duration}>
-        <span className="text-3xl sm:text-4xl font-semibold text-white tracking-tight text-center group-hover:text-white/90">{title}</span>
+        <span className="text-2xl sm:text-3xl font-semibold text-white tracking-tight text-center group-hover:text-white/90">{title}</span>
     </a>
   );
 }
