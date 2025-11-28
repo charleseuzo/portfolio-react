@@ -25,13 +25,14 @@ const dataBox = [
 
 function ExperiencePro() {
   return (
-    <section id="experiencepro" className={`${styles.experiencepro} py-5`}>
-      <Container className="py-12">
-        <h2 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold text-center">
+    <section id="experiencepro" className={`${styles.experiencepro} pt-5`}>
+      <Container className="pt-16 pb-5">
+        <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl font-bold relative w-fit">
           Mes expériences professionnelles
+          <span className="block h-1 w-full mt-2 bg-gradient-to-r from-[#B4C9DB] via-[#8AA6C1] to-[#4F6F8A] rounded-full animate-pulse"></span>
         </h2>
       </Container>
-      <Container className="py-12">
+      <Container className="pb-5">
         <Boxes boxesData={dataBox} />
       </Container>
     </section>

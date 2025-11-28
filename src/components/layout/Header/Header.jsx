@@ -2,6 +2,13 @@ import styles from "./Header.module.css";
 import Container from "../Container/Container";
 
 function Header() {
+  const navItems = [
+    { name: "À propos de moi", href: "#a-propos" },
+    { name: "Expériences professionelles", href: "#experiencepro" },
+    { name: "Formations académiques", href: "#formations" },
+    { name: "Compétences", href: "#competences" },
+  ];
+
   return (
     <header
       className={`${styles.header} py-5 text-white text-lg fixed top-0 left-0 w-full shadow z-50`}
@@ -16,19 +23,12 @@ function Header() {
               loading="lazy"
             />
           </a>
-          <ul className="flex gap-4">
-            <li>
-              <a href="#a-propos">À propos de moi</a>
-            </li>
-            <li>
-              <a href="#experiencepro">Expériences professionelles</a>
-            </li>
-            <li>
-              <a href="#formations">Formations académiques</a>
-            </li>
-            <li>
-              <a href="#competences">Compétences</a>
-            </li>
+          <ul className={`${styles.menu_desktop} flex gap-4`}>
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <a href={item.href}>{item.name}</a>
+              </li>
+            ))}
           </ul>
           <ul className="flex gap-4">
             <li>
@@ -42,6 +42,11 @@ function Header() {
                 target="_blank"
               >
                 <i className="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/charleseuzo/" target="_blank">
+                <i className="fa-brands fa-github"></i>
               </a>
             </li>
           </ul>

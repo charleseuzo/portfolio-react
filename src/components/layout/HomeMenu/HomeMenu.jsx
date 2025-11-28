@@ -15,8 +15,8 @@ const dataHome = [
 
 function HomeMenu() {
   return (
-    <section className={`${styles.homemenu} py-5`}>
-      <Container className="py-12">
+    <section className={`${styles.homemenu} pt-5`}>
+      <Container className="pt-16 pb-5">
         <Cards cardsData={dataHome} />
       </Container>
     </section>
