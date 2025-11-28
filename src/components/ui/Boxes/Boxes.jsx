@@ -4,13 +4,13 @@ import Box from "../Box/Box";
 function Boxes({ boxesData }) {
   return (
     <div
-      className={`${styles.boxes} flex flex-wrap content-center justify-between items-start`}
+      className={`${styles.boxes} flex flex-wrap content-center justify-between items-start space-y-10`}
     >
       {boxesData.map((box, index) => (
         <Box
           key={index}
           title={box.title}
-          textePath={box.textePath}
+          texte={box.texte}
           duration={box.duration}
           image={box.image}
         />
