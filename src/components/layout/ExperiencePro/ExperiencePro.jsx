@@ -2,22 +2,27 @@ import styles from "./ExperiencePro.module.css";
 import Container from "../Container/Container";
 import Boxes from "../../ui/Boxes/Boxes";
 
+// Import des textes JSX
+import agencelb from "../../../content/textes/agencelb.jsx";
+import constella from "../../../content/textes/constella.jsx";
+import touchette from "../../../content/textes/touchette.jsx";
+
 const dataBox = [
   {
     title: "Développeur Front-End chez L'agence LB",
-    textePath: "./content/textes/agencelb.html",
+    texte: agencelb,
     duration: "800",
     image: [{ src: "./images/logo-agencelb.png", alt: "L'agence LB" }],
   },
   {
     title: "Programmeur/intégrateur de sites web chez Constella",
-    textePath: "./content/textes/constella.html",
+    texte: constella,
     duration: "1000",
     image: [{ src: "./images/logo-constella.svg", alt: "Constella" }],
   },
   {
     title: "Commis Fichiers Maîtres chez Groupe Touchette",
-    textePath: "./content/textes/touchette.html",
+    texte: touchette,
     duration: "1200",
     image: [{ src: "./images/logo-touchette.jpg", alt: "Groupe Touchette" }],
   },
@@ -26,7 +31,7 @@ const dataBox = [
 function ExperiencePro() {
   return (
     <section id="experiencepro" className={`${styles.experiencepro} pt-5`}>
-      <Container className="pt-16 pb-5">
+      <Container className="py-16">
         <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl font-bold relative w-fit">
           Mes expériences professionnelles
           <span className="block h-1 w-full mt-2 bg-gradient-to-r from-[#B4C9DB] via-[#8AA6C1] to-[#4F6F8A] rounded-full animate-pulse"></span>
