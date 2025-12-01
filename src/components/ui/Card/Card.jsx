@@ -9,7 +9,7 @@ function Card({ title, link, duration }) {
       data-aos-duration={duration}
     >
       <div
-        className={`${styles.visual} group flex flex-col items-center justify-center p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-xl transition duration-300 ease-[cubic-bezier(.4,0,.2,1)]`}
+        className={`${styles.visual} group flex flex-col items-center justify-center p-6 border border-white/20 rounded-xl shadow-xl transition duration-300 ease-[cubic-bezier(.4,0,.2,1)]`}
       >
         <span className="text-2xl sm:text-3xl font-semibold text-white tracking-tight text-center group-hover:text-white/90">
           {title}
