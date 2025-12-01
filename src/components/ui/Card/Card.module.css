@@ -3,4 +3,42 @@
   height: 300px;
   display: flex;
   transition: all 0.3s ease-out;
+  box-sizing: border-box;
+  flex: 0 0 24%;
+}
+
+.visual {
+  transform: translateY(0);
+  transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 200ms ease-out, opacity 180ms ease-out,
+    box-shadow 220ms ease-out;
+  will-change: transform;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #0b0f14 0%, #05070a 100%);
+  /* Soft default shadow for dark background */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22),
+    0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+
+.card:hover .visual {
+  transform: translateY(-8px);
+  /* Subtle hover background color (less bright than white/20) */
+  background-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3), 0 0 12px rgba(255, 255, 255, 0.06);
+}
+
+.card:hover {
+  z-index: 20;
+}
+
+.card:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.92);
+  outline-offset: 4px;
+  z-index: 30;
 }

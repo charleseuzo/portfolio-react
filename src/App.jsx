@@ -1,30 +1,22 @@
-import { useState } from "react";
-import Schema from "./Schema";
-import styles from "./App.module.css";
-import Header from "./components/layout/Header";
-import Hero from "./components/layout/Hero";
-import HomeMenu from "./components/layout/HomeMenu/HomeMenu";
-import Apropos from "./components/layout/Apropos";
-import ExperiencePro from "./components/layout/ExperiencePro";
-import Formations from "./components/layout/Formations/Formations";
-import Footer from "./components/layout/Footer";
+import { Routes, Route } from "react-router-dom";
+
+// Pages
+import Home from "./pages/Home";
+import Projets from "./pages/Projets";
+import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
+import NotFound from "./pages/NotFound";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <Schema />
-      <Header />
-      <main className="pt-[64px]">
-        <Hero />
-        <HomeMenu />
-        <Apropos />
-        <ExperiencePro />
-        <Formations />
-      </main>
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/projets" element={<Projets />} />
+      <Route
+        path="/politique-de-confidentialite"
+        element={<PolitiqueConfidentialite />}
+      />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 

@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #0b0f14;
 }
 
 .container {
@@ -13,5 +14,5 @@ section {
 }
 
 .text-shadow {
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }

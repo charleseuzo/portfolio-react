@@ -1,0 +1,84 @@
+.cardIcone {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0.5rem 0;
+}
+
+.visual {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255,255,255,0.03);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform 220ms cubic-bezier(0.4,0,0.2,1), box-shadow 220ms ease-out, background-color 180ms ease-out;
+  will-change: transform;
+  min-height: 140px;
+  box-sizing: border-box;
+}
+
+.content {
+  flex: 1 1 65%;
+}
+
+.imageWrap {
+  flex: 0 0 28%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 96px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Hover lifts the visual block (child) — keeps AOS on parent safe */
+.cardIcone:hover .visual {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.25), 0 0 10px rgba(255,255,255,0.04);
+  background-color: rgba(255,255,255,0.06);
+  z-index: 10;
+}
+
+/* Focus outline for accessibility */
+.cardIcone:focus-visible {
+  outline: 3px solid rgba(255,255,255,0.92);
+  outline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+  .visual {
+    flex-direction: row;
+  }
+  .imageWrap {
+    flex: 0 0 30%;
+  }
+  .image {
+    max-height: 72px;
+  }
+}
+
+@media (max-width: 480px) {
+  .visual {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  .content {
+    text-align: center;
+  }
+  .imageWrap {
+    flex: none;
+    padding-top: 0.5rem;
+  }
+  .image {
+    max-height: 60px;
+  }
+}
