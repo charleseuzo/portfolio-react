@@ -3,12 +3,12 @@ import Container from "../Container/Container";
 import { Link } from "react-router-dom";
 
 function Header() {
-  // Use absolute paths with hash so links work from any page (e.g. /#experiencepro)
+  // Use pathname + hash so Links produce a proper location.hash under HashRouter
   const navItems = [
-    { name: "À propos de moi", href: "/#a-propos" },
-    { name: "Expériences professionelles", href: "/#experiencepro" },
-    { name: "Formations académiques", href: "/#formations" },
-    { name: "Compétences", href: "/#competences" },
+    { name: "À propos de moi", hash: "a-propos" },
+    { name: "Expériences professionelles", hash: "experiencepro" },
+    { name: "Formations académiques", hash: "formations" },
+    { name: "Compétences", hash: "competences" },
   ];
 
   return (
@@ -27,8 +27,8 @@ function Header() {
           </Link>
           <ul className={`${styles.menu_desktop} flex gap-4`}>
             {navItems.map((item) => (
-              <li key={item.href}>
-                <Link to={item.href}>{item.name}</Link>
+              <li key={item.hash}>
+                <Link to={{ pathname: "/", hash: `#${item.hash}` }}>{item.name}</Link>
               </li>
             ))}
           </ul>
