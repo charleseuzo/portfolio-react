@@ -1,30 +1,32 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import App from './App.jsx'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-// Font Awesome CSS
-import './assets/fontawesome/css/fontawesome.css'
-import './assets/fontawesome/css/brands.css'
-import './assets/fontawesome/css/solid.css'
+import App from "./App.jsx";
+import ScrollToHash from "./components/ScrollToHash";
 
 // Tailwind CSS
-import './index.css'
+import "./index.css";
 
-//Initialisation de AOS
+// Font Awesome CSS
+import "./assets/fontawesome/css/fontawesome.css";
+import "./assets/fontawesome/css/brands.css";
+import "./assets/fontawesome/css/solid.css";
+
+// AOS Animation on Scroll
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 AOS.init({
   duration: 800, // durée des animations (ms)
-  once: true,    // l’animation ne se rejoue pas
-  easing: 'ease-in-out',
-})
+  once: true, // l’animation ne se rejoue pas
+  easing: "ease-in-out",
+});
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
+      <ScrollToHash headerOffset={64} />
       <App />
     </BrowserRouter>
-  </StrictMode>,
-)
+  </StrictMode>
+);

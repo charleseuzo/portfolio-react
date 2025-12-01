@@ -1,12 +1,13 @@
 .header {
-    background-color: #030712;
+  background-color: #0b0f14;
 }
 
-.header .menu_desktop li a{
+.header li a {
   transition-property: color;
   transition-duration: 300ms;
 }
 
-.header .menu_desktop li a:hover, .menu-desktop li a:focus{
-    color: #B4C9DB;
+.header li a:hover,
+.header li a:focus {
+  color: #b4c9db;
 }
