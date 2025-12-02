@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Redirection…</title>
     <script>
-      // Redirect to the app root - React Router will handle the routing
-      // This prevents multiple redirects on refresh
+      // GitHub Pages SPA redirect trick for BrowserRouter
       (function () {
         var base = "/portfolio-react/";
         var path = location.pathname;
 
-        // If we're not already at the base, redirect there
-        // React Router will render the 404 page if the route doesn't exist
-        if (path !== base) {
-          location.replace(base);
+        // Remove base from path if present
+        if (path.indexOf(base) === 0) {
+          path = path.slice(base.length);
         }
+
+        // Only save if there's actually a path to restore (not just empty or /)
+        if (path && path !== "/" && path !== "") {
+          sessionStorage.setItem(
+            "githubPagesRedirect",
+            path + location.search + location.hash
+          );
+        }
+
+        location.replace(base);
       })();
     </script>
   </head>
