@@ -27,13 +27,13 @@ const redirectPath = sessionStorage.getItem("redirectPath");
 if (redirectPath) {
   sessionStorage.removeItem("redirectPath");
   // In production, prepend the basename so the full URL matches BrowserRouter's expectation
-  const basename = import.meta.env.PROD ? "/portfolio-react" : "";
+  const basename = import.meta.env.PROD ? "/portfolio-react/" : "/";
   history.replaceState(null, "", basename + redirectPath);
 }
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter basename={import.meta.env.PROD ? "/portfolio-react" : "/"}>
+    <BrowserRouter basename={import.meta.env.PROD ? "/portfolio-react/" : "/"}>
       <ScrollToHash headerOffset={64} />
       <App />
     </BrowserRouter>
