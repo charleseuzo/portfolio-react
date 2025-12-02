@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -7,7 +7,7 @@
     <script>
       (function () {
         // Change this if you publish under a different repo name
-        var base = '/portfolio-react';
+        var base = "/portfolio-react";
 
         // full requested path (pathname + search + hash)
         var full = location.pathname + location.search + location.hash;
@@ -15,8 +15,13 @@
         // If site is deployed at a subpath (base), remove it from the start
         if (full.indexOf(base) === 0) full = full.slice(base.length);
 
+        // If it already has a hash (e.g., #formations), don't redirect
+        if (full.indexOf("#") === 0) {
+          return;
+        }
+
         // Build the hash route and replace so the SPA can handle routing
-        var target = base + '/#' + (full || '/');
+        var target = base + "/#" + (full || "/");
         location.replace(target);
       })();
     </script>
