@@ -1,5 +1,6 @@
 import styles from "./Header.module.css";
 import Container from "../Container/Container";
+import { Link } from "react-router-dom";
 
 function Header() {
   const navItems = [
@@ -9,24 +10,29 @@ function Header() {
     { name: "Compétences", hash: "competences" },
   ];
 
+  // Navigation via React Router to always point to Home + hash.
+  // Produces clean href like "/#formations" (dev) or "/portfolio-react/#formations" (prod).
+
   return (
     <header
       className={`${styles.header} py-5 text-white text-lg fixed top-0 left-0 w-full shadow z-50`}
     >
       <Container>
         <nav className="flex flex-wrap justify-between">
-          <a href="/" className="w-1/5">
+          <Link to="/" className="w-1/5">
             <img
               src="./images/charles_paquet_logo.jpg"
               alt="Photo de Charles"
               className="object-cover"
               loading="lazy"
             />
-          </a>
+          </Link>
           <ul className={`${styles.menu_desktop} flex gap-4`}>
             {navItems.map((item) => (
               <li key={item.hash}>
-                <a href={`#${item.hash}`}>{item.name}</a>
+                <Link to={{ pathname: "/", hash: `#${item.hash}` }}>
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>

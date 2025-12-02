@@ -9,16 +9,19 @@ export default function ScrollToHash({ headerOffset = 64 }) {
   useEffect(() => {
     if (!location) return;
 
-    const hash = location.hash;
+    const hash = window.location.hash;
+    console.log("ScrollToHash: hash =", hash);
     if (!hash) return;
 
     const id = hash.replace("#", "");
+    console.log("ScrollToHash: looking for element with id =", id);
     let attempts = 0;
     const maxAttempts = 12; // try for ~1.2s
     const intervalMs = 100;
 
     const scrollToElement = (el) => {
-      const elementPosition = el.getBoundingClientRect().top + window.pageYOffset;
+      const elementPosition =
+        el.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = Math.max(elementPosition - headerOffset, 0);
       window.scrollTo({ top: offsetPosition, behavior: "smooth" });
     };
@@ -26,6 +29,7 @@ export default function ScrollToHash({ headerOffset = 64 }) {
     const tryScroll = () => {
       const el = document.getElementById(id);
       if (el) {
+        console.log("ScrollToHash: found element, scrolling");
         scrollToElement(el);
         return true;
       }

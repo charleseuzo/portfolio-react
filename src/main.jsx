@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 import ScrollToHash from "./components/ScrollToHash";
 
@@ -24,9 +24,9 @@ AOS.init({
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter basename={import.meta.env.PROD ? "/portfolio-react" : "/"}>
       <ScrollToHash headerOffset={64} />
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>
 );
