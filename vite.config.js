@@ -4,5 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/",
+  // Use repository name as base so built assets resolve under /portfolio-react/
+  base: "/portfolio-react/",
 });
