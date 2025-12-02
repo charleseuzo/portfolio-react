@@ -1,5 +1,6 @@
 import styles from "./Hero.module.css";
 import Container from "../Container/Container";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -36,14 +37,14 @@ function Hero() {
           applications performantes et élégantes.
         </p>
         <div className="flex flex-row flex-wrap content-center justify-center gap-x-5">
-          <a
-            href="./projets/"
+          <Link
+            to="/projets"
             className="bg-white text-black font-semibold py-2 px-6 rounded-lg shadow hover:bg-neutral-100 transition"
             data-aos="fade-in"
             data-aos-duration="1200"
           >
             Voir mes projets
-          </a>
+          </Link>
           <a
             href="./content/files/CV_Charles Pâquet 2025.pdf"
             target="_blank"
