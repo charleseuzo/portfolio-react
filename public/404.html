@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Redirection…</title>
+    <script>
+      (function () {
+        // Change this if you publish under a different repo name
+        var base = '/portfolio-react';
+
+        // full requested path (pathname + search + hash)
+        var full = location.pathname + location.search + location.hash;
+
+        // If site is deployed at a subpath (base), remove it from the start
+        if (full.indexOf(base) === 0) full = full.slice(base.length);
+
+        // Build the hash route and replace so the SPA can handle routing
+        var target = base + '/#' + (full || '/');
+        location.replace(target);
+      })();
+    </script>
+  </head>
+  <body>
+    Redirection…
+  </body>
+</html>

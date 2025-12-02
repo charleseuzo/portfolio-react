@@ -7,10 +7,7 @@ function Hero() {
       className={`${styles.hero} relative min-h-[calc(100vh-64px)] flex items-center justify-center text-white`}
     >
       <picture>
-        <source
-          media="(min-width:1024px)"
-          srcSet="./images/hero-desktop.jpg"
-        />
+        <source media="(min-width:1024px)" srcSet="./images/hero-desktop.jpg" />
         <source media="(min-width:640px)" srcSet="./images/hero-tablet.jpg" />
         <img
           src="./images/hero-mobile.jpg"
@@ -24,24 +21,35 @@ function Hero() {
         <h1
           className="text-shadow text-4xl sm:text-5xl lg:text-6xl font-bold mb-6"
           data-aos="fade-in"
-        ><span className="text-xl sm:text-2xl lg:text-3xl font-bold mb-6">Développeur Front-End </span>
+        >
+          <span className="text-xl sm:text-2xl lg:text-3xl font-bold mb-6">
+            Développeur Front-End{" "}
+          </span>
           <span className="block">Charles Pâquet</span>
         </h1>
-        <p className="text-shadow text-white/90 text-xl sm:text-2xl lg:text-3xl font-bold mb-6" data-aos="fade-in" data-aos-duration="1000">
+        <p
+          className="text-shadow text-white/90 text-xl sm:text-2xl lg:text-3xl font-bold mb-6"
+          data-aos="fade-in"
+          data-aos-duration="1000"
+        >
           Passionné par le développement web moderne, je transforme vos idées en
           applications performantes et élégantes.
         </p>
         <div className="flex flex-row flex-wrap content-center justify-center gap-x-5">
           <a
-            href="/projets/"
-            className="bg-white text-black font-semibold py-2 px-6 rounded-lg shadow hover:bg-neutral-100 transition"  data-aos="fade-in" data-aos-duration="1200"
+            href="./projets/"
+            className="bg-white text-black font-semibold py-2 px-6 rounded-lg shadow hover:bg-neutral-100 transition"
+            data-aos="fade-in"
+            data-aos-duration="1200"
           >
             Voir mes projets
           </a>
           <a
             href="./content/files/CV_Charles Pâquet 2025.pdf"
             target="_blank"
-            className="border border-white text-white font-semibold py-2 px-6 rounded-lg hover:bg-white/10 transition inline-flex items-center"  data-aos="fade-in" data-aos-duration="1200"
+            className="border border-white text-white font-semibold py-2 px-6 rounded-lg hover:bg-white/10 transition inline-flex items-center"
+            data-aos="fade-in"
+            data-aos-duration="1200"
           >
             <svg
               className="fill-current w-4 h-4 mr-2"
