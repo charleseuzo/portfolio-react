@@ -8,20 +8,16 @@
       (function () {
         // Change this if you publish under a different repo name
         var base = "/portfolio-react";
-
-        // full requested path (pathname + search + hash)
-        var full = location.pathname + location.search + location.hash;
+        var currentPath = location.pathname + location.search + location.hash;
 
         // If site is deployed at a subpath (base), remove it from the start
-        if (full.indexOf(base) === 0) full = full.slice(base.length);
-
-        // If it already has a hash (e.g., #formations), don't redirect
-        if (full.indexOf("#") === 0) {
-          return;
+        if (currentPath.indexOf(base) === 0) {
+          currentPath = currentPath.slice(base.length);
         }
 
-        // Build the hash route and replace so the SPA can handle routing
-        var target = base + "/#" + (full || "/");
+        // Redirect unknown routes to the home page (which will handle the route via React Router)
+        // This is for BrowserRouter, so we redirect to base + "/"
+        var target = base + "/";
         location.replace(target);
       })();
     </script>
