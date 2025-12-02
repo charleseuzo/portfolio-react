@@ -11,7 +11,7 @@ function Footer() {
         <p>
           © {currentYear} |{" "}
           <Link
-            to="/politique-de-confidentialite"
+            to="/politique-de-confidentialite/"
             className="hover:text-white/70 transition-colors duration-200"
           >
             Politique de confidentialité

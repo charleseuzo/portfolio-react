@@ -38,7 +38,7 @@ function Hero() {
         </p>
         <div className="flex flex-row flex-wrap content-center justify-center gap-x-5">
           <Link
-            to="/projets"
+            to="/projets/"
             className="bg-white text-black font-semibold py-2 px-6 rounded-lg shadow hover:bg-neutral-100 transition"
             data-aos="fade-in"
             data-aos-duration="1200"
