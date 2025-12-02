@@ -19,14 +19,14 @@ function Header() {
     >
       <Container>
         <nav className="flex flex-wrap justify-between">
-          <Link to="/" className="w-1/5">
+          <a href="/" className="w-1/5">
             <img
               src="./images/charles_paquet_logo.jpg"
               alt="Photo de Charles"
               className="object-cover"
               loading="lazy"
             />
-          </Link>
+          </a>
           <ul className={`${styles.menu_desktop} flex gap-4`}>
             {navItems.map((item) => (
               <li key={item.hash}>
