@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://charleseuzo.github.io/portfolio-react/sitemap.xml
