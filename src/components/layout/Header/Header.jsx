@@ -1,9 +1,7 @@
 import styles from "./Header.module.css";
 import Container from "../Container/Container";
-import { Link } from "react-router-dom";
 
 function Header() {
-  // Use pathname + hash so Links produce a proper location.hash under HashRouter
   const navItems = [
     { name: "À propos de moi", hash: "a-propos" },
     { name: "Expériences professionelles", hash: "experiencepro" },
@@ -17,18 +15,18 @@ function Header() {
     >
       <Container>
         <nav className="flex flex-wrap justify-between">
-          <Link to="/" className="w-1/5">
+          <a href="/" className="w-1/5">
             <img
               src="./images/charles_paquet_logo.jpg"
               alt="Photo de Charles"
               className="object-cover"
               loading="lazy"
             />
-          </Link>
+          </a>
           <ul className={`${styles.menu_desktop} flex gap-4`}>
             {navItems.map((item) => (
               <li key={item.hash}>
-                <Link to={{ pathname: "/", hash: `#${item.hash}` }}>{item.name}</Link>
+                <a href={`#${item.hash}`}>{item.name}</a>
               </li>
             ))}
           </ul>
