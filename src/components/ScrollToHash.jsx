@@ -10,11 +10,9 @@ export default function ScrollToHash({ headerOffset = 64 }) {
     if (!location) return;
 
     const hash = window.location.hash;
-    console.log("ScrollToHash: hash =", hash);
     if (!hash) return;
 
     const id = hash.replace("#", "");
-    console.log("ScrollToHash: looking for element with id =", id);
     let attempts = 0;
     const maxAttempts = 12; // try for ~1.2s
     const intervalMs = 100;
@@ -29,7 +27,6 @@ export default function ScrollToHash({ headerOffset = 64 }) {
     const tryScroll = () => {
       const el = document.getElementById(id);
       if (el) {
-        console.log("ScrollToHash: found element, scrolling");
         scrollToElement(el);
         return true;
       }

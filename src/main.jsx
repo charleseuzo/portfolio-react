@@ -18,9 +18,16 @@ import "aos/dist/aos.css";
 
 AOS.init({
   duration: 800, // durée des animations (ms)
-  once: true, // l’animation ne se rejoue pas
+  once: true, // l'animation ne se rejoue pas
   easing: "ease-in-out",
 });
+
+// Restore path from 404 redirect if present
+const redirectPath = sessionStorage.getItem("redirectPath");
+if (redirectPath) {
+  sessionStorage.removeItem("redirectPath");
+  history.replaceState(null, "", redirectPath);
+}
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

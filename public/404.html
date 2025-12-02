@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Redirection…</title>
     <script>
+      // GitHub Pages SPA redirect trick for BrowserRouter
+      // Store the path in sessionStorage and redirect to index.html
       (function () {
-        // Change this if you publish under a different repo name
         var base = "/portfolio-react";
-        var currentPath = location.pathname + location.search + location.hash;
+        var path = location.pathname;
 
-        // If site is deployed at a subpath (base), remove it from the start
-        if (currentPath.indexOf(base) === 0) {
-          currentPath = currentPath.slice(base.length);
+        // Remove base from path if present
+        if (path.indexOf(base) === 0) {
+          path = path.slice(base.length);
         }
 
-        // Redirect unknown routes to the home page (which will handle the route via React Router)
-        // This is for BrowserRouter, so we redirect to base + "/"
-        var target = base + "/";
-        location.replace(target);
+        // Store the original path and redirect to the root
+        // The app will restore the path on load
+        sessionStorage.setItem(
+          "redirectPath",
+          path + location.search + location.hash
+        );
+        location.replace(base + "/");
       })();
     </script>
   </head>
