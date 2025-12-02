@@ -22,11 +22,13 @@ AOS.init({
   easing: "ease-in-out",
 });
 
-// Restore path from 404 redirect if present
+// Restore path from 404 redirect if present (GitHub Pages SPA trick)
 const redirectPath = sessionStorage.getItem("redirectPath");
 if (redirectPath) {
   sessionStorage.removeItem("redirectPath");
-  history.replaceState(null, "", redirectPath);
+  // In production, prepend the basename so the full URL matches BrowserRouter's expectation
+  const basename = import.meta.env.PROD ? "/portfolio-react" : "";
+  history.replaceState(null, "", basename + redirectPath);
 }
 
 createRoot(document.getElementById("root")).render(
