@@ -1,0 +1,35 @@
+.competences {
+}
+
+.blackBox {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform 220ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 220ms ease-out, background-color 180ms ease-out;
+  will-change: transform;
+}
+
+.blackBox:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.25),
+    0 0 10px rgba(255, 255, 255, 0.04);
+  background-color: rgba(255, 255, 255, 0.06);
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .blackBox {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blackBox {
+    padding: 1rem;
+  }
+}
