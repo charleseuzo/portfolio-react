@@ -14,7 +14,7 @@ function CardIcone({
       data-aos-duration={duration}
     >
       <div className={styles.visual}>
-        <div className={styles.imageWrap}>
+        <div className={`${styles.imageWrap}`}>
           {image && (
             <img
               className={styles.image}
@@ -23,7 +23,7 @@ function CardIcone({
             />
           )}
         </div>
-        <div className={styles.content}>
+        <div className={`${styles.content}`}>
           <h3 className="text-white text-xl font-semibold mb-2">
             {school_name}
           </h3>

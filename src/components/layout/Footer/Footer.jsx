@@ -7,7 +7,7 @@ function Footer() {
 
   return (
     <footer className={`${styles.footer} py-5 text-white`}>
-      <Container className="flex flex-row flex-wrap justify-center">
+      <Container className="flex flex-row flex-wrap justify-center text-center">
         <p>
           © {currentYear} |{" "}
           <Link

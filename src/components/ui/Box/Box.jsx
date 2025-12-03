@@ -7,11 +7,13 @@ function Box({ title, texte, duration, image }) {
       data-aos="fade-up"
       data-aos-duration={duration}
     >
-      <div className="grid p-6 col-span-2">
+      <div className="grid p-6 col-span-2 order-last md:order-first gap-4">
         <h3 className="text-white text-xl font-semibold">{title}</h3>
         <div className="text-white font-medium">{texte}</div>
       </div>
-      <div className={`relative bg-white p-6 rounded overflow-hidden ${styles.imageWrap}`}>
+      <div
+        className={`relative bg-white p-6 rounded overflow-hidden order-first md:order-last ${styles.imageWrap}`}
+      >
         {image.map((img, i) => (
           <img key={i} className={styles.image} src={img.src} alt={img.alt} />
         ))}
