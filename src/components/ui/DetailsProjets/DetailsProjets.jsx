@@ -9,7 +9,8 @@ const projetsData = [
     slug: "pickleball-rn",
     titre: "Pickleball R-N",
     categorie: "Site Web Professionnel",
-    image: "/images/logo-agencelb.png", // Remplacez par le screenshot
+    image: "./images/logo_pickleball_rouyn-noranda.jpg",
+    backgroundColor: "#1b4b8d",
   },
 ];
 
