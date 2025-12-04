@@ -29,7 +29,7 @@ function NotFound() {
                 Retour à l'accueil
               </Link>
               <Link
-                to="/projets"
+                to="/projets/"
                 className="inline-block px-8 py-3 bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
               >
                 Voir mes projets

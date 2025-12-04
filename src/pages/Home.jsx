@@ -11,6 +11,7 @@ import HomeMenu from "../components/layout/HomeMenu/HomeMenu";
 import Apropos from "../components/layout/Apropos";
 import ExperiencePro from "../components/layout/ExperiencePro";
 import Formations from "../components/layout/Formations/Formations";
+import Competences from "../components/layout/Competences/Competences";
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
         <Apropos />
         <ExperiencePro />
         <Formations />
+        <Competences />
       </main>
       <Footer />
     </>

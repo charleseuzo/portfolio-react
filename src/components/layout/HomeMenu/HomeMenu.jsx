@@ -15,7 +15,7 @@ const dataHome = [
 
 function HomeMenu() {
   return (
-    <section className={`${styles.homemenu} pt-5`}>
+    <section className={`${styles.homemenu} pt-5 hidden md:block`}>
       <Container className="pt-16 pb-5">
         <Cards cardsData={dataHome} />
       </Container>
