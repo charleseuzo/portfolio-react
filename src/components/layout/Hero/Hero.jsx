@@ -36,7 +36,7 @@ function Hero() {
           Passionné par le développement web moderne, je transforme vos idées en
           applications performantes et élégantes.
         </p>
-        <div className="flex flex-row flex-wrap content-center justify-center gap-x-5">
+        <div className="flex flex-row flex-wrap content-center justify-center gap-x-5 gap-y-3">
           <Link
             to="/projets/"
             className="bg-white text-black font-semibold py-2 px-6 rounded-lg shadow hover:bg-neutral-100 transition"
