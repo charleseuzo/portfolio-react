@@ -28,9 +28,13 @@ const sampleFormations = [
 
 function Formations() {
   return (
-    <section id="formations" className={`${styles.formations} py-5`}>
-      <Container className="py-12">
-        <h2 className="text-white text-3xl font-bold mb-6">Formations</h2>
+    <section id="formations" className={`${styles.formations} pt-5`}>
+      <Container className="py-16">
+        <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl relative w-fit">
+          Formations
+        </h2>
+      </Container>
+      <Container className="pb-5">
         <CardsIcone items={sampleFormations} />
       </Container>
     </section>

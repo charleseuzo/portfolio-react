@@ -20,16 +20,16 @@ function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/20"></div>
       <Container className="relative z-10 text-center px-4">
         <h1
-          className="text-shadow text-4xl sm:text-5xl lg:text-6xl font-bold mb-6"
+          className="text-shadow text-4xl sm:text-5xl lg:text-6xl mb-6"
           data-aos="fade-in"
         >
-          <span className="text-xl sm:text-2xl lg:text-3xl font-bold mb-6">
+          <span className="text-xl sm:text-2xl lg:text-3xl mb-6">
             Développeur Front-End{" "}
           </span>
           <span className="block">Charles Pâquet</span>
         </h1>
         <p
-          className="text-shadow text-white/90 text-xl sm:text-2xl lg:text-3xl font-bold mb-6"
+          className="text-shadow text-white/90 text-xl sm:text-2xl lg:text-3xl mb-6"
           data-aos="fade-in"
           data-aos-duration="1000"
         >
