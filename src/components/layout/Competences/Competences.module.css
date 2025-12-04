@@ -1,0 +1,45 @@
+.competences {
+}
+
+.blackBox {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3rem 2.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(20, 20, 20, 0.95) 0%,
+    rgba(10, 10, 10, 0.98) 100%
+  );
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.blackBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+}
+
+@media (max-width: 768px) {
+  .blackBox {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blackBox {
+    padding: 1.5rem 1rem;
+  }
+}

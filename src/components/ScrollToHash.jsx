@@ -9,7 +9,7 @@ export default function ScrollToHash({ headerOffset = 64 }) {
   useEffect(() => {
     if (!location) return;
 
-    const hash = location.hash;
+    const hash = window.location.hash;
     if (!hash) return;
 
     const id = hash.replace("#", "");
@@ -18,7 +18,8 @@ export default function ScrollToHash({ headerOffset = 64 }) {
     const intervalMs = 100;
 
     const scrollToElement = (el) => {
-      const elementPosition = el.getBoundingClientRect().top + window.pageYOffset;
+      const elementPosition =
+        el.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = Math.max(elementPosition - headerOffset, 0);
       window.scrollTo({ top: offsetPosition, behavior: "smooth" });
     };

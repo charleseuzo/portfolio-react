@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Redirection…</title>
+    <script>
+      // GitHub Pages SPA redirect trick for BrowserRouter
+      (function () {
+        var base = "/portfolio-react/";
+        var path = location.pathname;
+
+        // Remove base from path if present
+        if (path.indexOf(base) === 0) {
+          path = path.slice(base.length);
+        }
+
+        // Only save if there's actually a path to restore (not just empty or /)
+        if (path && path !== "/" && path !== "") {
+          sessionStorage.setItem(
+            "githubPagesRedirect",
+            path + location.search + location.hash
+          );
+        }
+
+        location.replace(base);
+      })();
+    </script>
+  </head>
+  <body>
+    Redirection…
+  </body>
+</html>

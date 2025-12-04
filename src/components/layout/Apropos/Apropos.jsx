@@ -12,7 +12,7 @@ function Apropos() {
     <section id="a-propos" className={`${styles.apropos} pt-5`}>
       <Container className="pt-16 pb-5">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 items-center">
-          <div className="col-span-1">
+          <div className="col-span-1 order-last md:order-first">
             <img
               src="./images/charles_a-propos.webp"
               alt="Photo de Charles"
@@ -24,7 +24,7 @@ function Apropos() {
             />
           </div>
           <div
-            className="text-white flex flex-col gap-6 col-span-3"
+            className="text-white flex flex-col gap-6 col-span-3 order-first md:order-last"
             data-aos="fade-left"
           >
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold relative w-fit">

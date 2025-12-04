@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 import ScrollToHash from "./components/ScrollToHash";
 
@@ -18,15 +18,25 @@ import "aos/dist/aos.css";
 
 AOS.init({
   duration: 800, // durée des animations (ms)
-  once: true, // l’animation ne se rejoue pas
+  once: true, // l'animation ne se rejoue pas
   easing: "ease-in-out",
 });
 
+// Restore path from 404 redirect if present (GitHub Pages SPA trick)
+(function () {
+  const redirectPath = sessionStorage.getItem("githubPagesRedirect");
+  if (redirectPath) {
+    sessionStorage.removeItem("githubPagesRedirect");
+    const basename = import.meta.env.PROD ? "/portfolio-react/" : "/";
+    history.replaceState(null, "", basename + redirectPath);
+  }
+})();
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter basename={import.meta.env.PROD ? "/portfolio-react/" : "/"}>
       <ScrollToHash headerOffset={64} />
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>
 );
