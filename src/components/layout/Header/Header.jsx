@@ -21,17 +21,14 @@ function Header() {
     { name: "Compétences", hash: "competences" },
   ];
 
-  // Navigation via React Router to always point to Home + hash.
-  // Produces clean href like "/#formations" (dev) or "/portfolio-react/#formations" (prod).
-
   return (
     <header
       className={`${styles.header} py-5 text-white text-lg fixed top-0 left-0 w-full shadow z-50`}
     >
       <Container>
-        {/* Mobile Navigation */}
-        <nav className="flex justify-between items-center md:hidden">
-          <Link to="/" className="w-1/2" onClick={closeMobileMenu}>
+        {/* Mobile & Tablet Navigation */}
+        <nav className="flex justify-between items-center lg:hidden">
+          <Link to="/" className="w-1/2 md:w-1/3" onClick={closeMobileMenu}>
             <img
               src={`${import.meta.env.BASE_URL}images/charles_paquet_logo.png`}
               alt="Photo de Charles"
@@ -80,7 +77,7 @@ function Header() {
         )}
 
         {/* Desktop Navigation */}
-        <nav className="justify-between hidden md:flex md:flex-wrap">
+        <nav className="justify-between hidden lg:flex lg:flex-wrap">
           <Link to="/" className="w-1/5">
             <img
               src={`${import.meta.env.BASE_URL}images/charles_paquet_logo.png`}
