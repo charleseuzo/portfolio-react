@@ -4,7 +4,7 @@ import Card from "../Card/Card";
 function Cards({ cardsData }) {
   return (
     <div
-      className={`${styles.cards} flex flex-wrap content-center justify-between items-start`}
+      className={`${styles.cards} flex flex-wrap content-center justify-between items-start md:gap-6 lg:gap-0`}
     >
       {cardsData.map((card, index) => (
         <Card
