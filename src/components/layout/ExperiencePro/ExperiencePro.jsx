@@ -13,18 +13,30 @@ const dataBox = [
     texte: agencelb,
     duration: "800",
     image: [{ src: "./images/logo-agencelb.png", alt: "L'agence LB" }],
+    date: "Septembre 2023 - Septembre 2025",
+    location: "Terrebonne (Télétravail)",
+    description:
+      "L'Agence LB est une agence marketing web passionnée de référencement naturel (SEO), de publicités PPC comme Facebook Ads / Google Ads, de création de sites web et plus.",
   },
   {
     title: "Programmeur/intégrateur de sites web chez Constella",
     texte: constella,
     duration: "1000",
     image: [{ src: "./images/logo-constella.svg", alt: "Constella" }],
+    date: "Juin 2021 - Mai 2023",
+    location: "Mont-Laurier",
+    description:
+      "Constella Agence Web est une agence web spécialisée en création de sites web, marketing numérique et solutions d'hébergement pour les entreprises de toutes tailles.",
   },
   {
     title: "Commis Fichiers Maîtres chez Groupe Touchette",
     texte: touchette,
     duration: "1200",
     image: [{ src: "./images/logo-touchette.jpg", alt: "Groupe Touchette" }],
+    date: "Février 2019 - Février 2021",
+    location: "Montréal",
+    description:
+      "Groupe Touchette est le plus important distributeur de pneus à propriété canadienne et est reconnu pour son expertise et son niveau de service supérieur auprès des manufacturiers, des concessionnaires automobiles et des clients indépendants.",
   },
 ];
 

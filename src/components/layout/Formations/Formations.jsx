@@ -8,21 +8,36 @@ const sampleFormations = [
     duration: 700,
     programme: "Baccalauréat en Démographie et géographie",
     date: "2013-2017",
-    image: { src: "./images/Icone_UdeM.png", alt: "Université de Montréal" },
+    image: {
+      src: "./images/Icone_UdeM.png",
+      alt: "Baccalauréat en Démographie et géographie - Université de Montréal",
+    },
+    description:
+      "Études en démographie et géographie à l'Université de Montréal.",
   },
   {
     school_name: "Université de Montréal",
     duration: 700,
     programme: "Certificat en informatique appliquée",
     date: "2018-2021",
-    image: { src: "./images/Icone_UdeM.png", alt: "Formation" },
+    image: {
+      src: "./images/Icone_UdeM.png",
+      alt: "Certificat en informatique appliquée - Université de Montréal",
+    },
+    description:
+      "Études en démographie et géographie à l'Université de Montréal.",
   },
   {
     school_name: "Cégep Garneau",
     duration: 700,
     programme: "Certification collégiale en cybersécurité",
     date: "2024",
-    image: { src: "./images/Icone-Cegep-Garneau.png", alt: "Cégep Garneau" },
+    image: {
+      src: "./images/Icone-Cegep-Garneau.png",
+      alt: "Certification collégiale en cybersécurité - Cégep Garneau",
+    },
+    description:
+      "Études en démographie et géographie à l'Université de Montréal.",
   },
 ];
 
