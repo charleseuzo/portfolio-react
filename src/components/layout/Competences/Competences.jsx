@@ -17,7 +17,11 @@ function Competences() {
   return (
     <section id="competences" className={`${styles.competences} pt-5`}>
       <Container className="py-16">
-        <h2 className="text-white text-3xl font-bold mb-6">Compétences</h2>
+        <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl relative w-fit">
+          Compétences
+        </h2>
+      </Container>
+      <Container className="pb-5">
         <div className={styles.blackBox}>
           <IconsGrid iconsData={iconsData} />
         </div>

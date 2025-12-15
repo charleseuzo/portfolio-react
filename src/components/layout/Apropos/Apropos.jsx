@@ -14,7 +14,7 @@ function Apropos() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 items-center">
           <div className="col-span-1 order-last md:order-first">
             <img
-              src="./images/charles_a-propos.webp"
+              src="./images/charles_a-propos.jpg"
               alt="Photo de Charles"
               loading="lazy"
               className="rounded-2xl object-cover 
@@ -27,13 +27,13 @@ function Apropos() {
             className="text-white flex flex-col gap-6 col-span-3 order-first md:order-last"
             data-aos="fade-left"
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold relative w-fit">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl relative w-fit">
               À propos de moi
-              <span className="block h-1 w-full mt-2 bg-gradient-to-r from-[#B4C9DB] via-[#8AA6C1] to-[#4F6F8A] rounded-full animate-pulse"></span>
+              {/* <span className="block h-1 w-full mt-2 bg-gradient-to-r from-[#B4C9DB] via-[#8AA6C1] to-[#4F6F8A] rounded-full animate-pulse"></span> */}
             </h2>
 
             <p className="text-lg leading-relaxed text-white/90">
-              Développeur Web polyvalent avec plus de 4 ans d’expérience en
+              Développeur Web polyvalent avec plus de 4 ans d'expérience en
               intégration front-end, développement WordPress, gestion de
               serveurs et optimisation de sites. Actuellement en
               perfectionnement sur les technologies IA (Orchids, Lovable, agents
