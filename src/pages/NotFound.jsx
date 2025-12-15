@@ -6,6 +6,18 @@ import Container from "../components/layout/Container";
 function NotFound() {
   return (
     <>
+      <title></title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <meta property="og:title" content="" />
+      <meta property="og:description" content="" />
+      <meta property="og:image" content="" />
+      <meta property="og:url" content="" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="" />
+      <meta name="twitter:description" content="" />
+      <meta name="twitter:image" content="" />
+
       <Header />
       <main className="pt-[64px] min-h-screen flex items-center justify-center">
         <Container className="py-20">

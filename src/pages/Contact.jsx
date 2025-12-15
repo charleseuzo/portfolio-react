@@ -31,6 +31,18 @@ function Contact() {
 
   return (
     <>
+      <title></title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <meta property="og:title" content="" />
+      <meta property="og:description" content="" />
+      <meta property="og:image" content="" />
+      <meta property="og:url" content="" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="" />
+      <meta name="twitter:description" content="" />
+      <meta name="twitter:image" content="" />
+
       <Header />
       <main className="pt-[64px] bg-black min-h-screen">
         <HeroContenu
