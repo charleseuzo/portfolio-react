@@ -6,10 +6,16 @@ import Container from "../components/layout/Container";
 function NotFound() {
   return (
     <>
+      <link
+        rel="canonical"
+        href="https://charleseuzo.github.io/portfolio-react/404"
+      />
+
       <title></title>
       <meta name="description" content="" />
       <meta name="keywords" content="" />
       <meta property="og:title" content="" />
+      <meta property="og:type" content="website" />
       <meta property="og:description" content="" />
       <meta property="og:image" content="" />
       <meta property="og:url" content="" />
