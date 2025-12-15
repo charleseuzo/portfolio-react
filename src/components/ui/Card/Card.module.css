@@ -42,3 +42,12 @@
   outline-offset: 4px;
   z-index: 30;
 }
+
+/* Tablet responsive */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    width: 45%;
+    flex: 0 0 45%;
+    height: 240px;
+  }
+}

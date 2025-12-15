@@ -13,6 +13,9 @@ function Boxes({ boxesData }) {
           texte={box.texte}
           duration={box.duration}
           image={box.image}
+          date={box.date}
+          location={box.location}
+          description={box.description}
         />
       ))}
     </div>
