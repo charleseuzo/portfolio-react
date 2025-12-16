@@ -1,0 +1,64 @@
+.projetsSection {
+  background-color: #0b0f14;
+}
+
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.projetWrapper {
+  flex: 1 1 280px;
+  min-width: 280px;
+  max-width: calc(33.333% - 1.5rem);
+}
+
+.ctaWrapper {
+  flex: 1 1 280px;
+  min-width: 280px;
+  max-width: calc(33.333% - 1.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #B4C9DB, #8AA6C1, #4F6F8A);
+  color: white;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(138, 166, 193, 0.3);
+}
+
+/* Tablet: 2 items par ligne */
+@media (max-width: 1023px) {
+  .projetWrapper,
+  .ctaWrapper {
+    max-width: calc(50% - 1rem);
+  }
+}
+
+/* Mobile: 1 item par ligne */
+@media (max-width: 640px) {
+  .flexContainer {
+    gap: 1.5rem;
+  }
+  
+  .projetWrapper,
+  .ctaWrapper {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}

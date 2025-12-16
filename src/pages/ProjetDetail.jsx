@@ -35,7 +35,7 @@ function ProjetDetail() {
       <meta name="twitter:image" content="" />
 
       <Header />
-      <main className="pt-[64px] bg-black min-h-screen">
+      <main className="pt-[64px] min-h-screen">
         <HeroContenu
           titre={projet.titre}
           imageMobile={projet.hero_image_mobile}

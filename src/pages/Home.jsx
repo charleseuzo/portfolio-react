@@ -40,7 +40,10 @@ function Home() {
         property="og:description"
         content="Portfolio de Charles Pâquet, développeur web et analyste-programmeur. Découvrez mes projets en React, mes compétences techniques et mes informations de contact."
       />
-      <meta property="og:image" content="https://charleseuzo.github.io/portfolio-react/images/charles_a-propos.jpg" />
+      <meta
+        property="og:image"
+        content="https://charleseuzo.github.io/portfolio-react/images/charles_a-propos.jpg"
+      />
       <meta
         property="og:url"
         content="https://charleseuzo.github.io/portfolio-react/"
@@ -54,14 +57,17 @@ function Home() {
         name="twitter:description"
         content="Portfolio de Charles Pâquet, développeur web et analyste-programmeur. Découvrez mes projets en React, mes compétences techniques et mes informations de contact."
       />
-      <meta name="twitter:image" content="https://charleseuzo.github.io/portfolio-react/images/charles_a-propos.jpg" />
+      <meta
+        name="twitter:image"
+        content="https://charleseuzo.github.io/portfolio-react/images/charles_a-propos.jpg"
+      />
       <Schema />
       <Header />
       <main className="pt-[64px]">
         <Hero />
         <HomeMenu />
-        <ProjetsSection />
         <Apropos />
+        <ProjetsSection />
         <ExperiencePro />
         <Formations />
         <Competences />
