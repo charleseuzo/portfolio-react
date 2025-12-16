@@ -8,6 +8,7 @@ import Footer from "../components/layout/Footer";
 // Sections
 import Hero from "../components/layout/Hero";
 import HomeMenu from "../components/layout/HomeMenu/HomeMenu";
+import ProjetsSection from "../components/layout/ProjetsSection";
 import Apropos from "../components/layout/Apropos";
 import ExperiencePro from "../components/layout/ExperiencePro";
 import Formations from "../components/layout/Formations/Formations";
@@ -59,6 +60,7 @@ function Home() {
       <main className="pt-[64px]">
         <Hero />
         <HomeMenu />
+        <ProjetsSection />
         <Apropos />
         <ExperiencePro />
         <Formations />

@@ -77,7 +77,7 @@ function Header() {
         )}
 
         {/* Desktop Navigation */}
-        <nav className="justify-between hidden lg:flex lg:flex-wrap">
+        <nav className="justify-between items-center hidden lg:flex lg:flex-wrap">
           <Link to="/" className="w-1/5">
             <img
               src={`${import.meta.env.BASE_URL}images/charles_paquet_logo.png`}

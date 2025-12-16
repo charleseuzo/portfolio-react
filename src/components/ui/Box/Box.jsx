@@ -10,13 +10,13 @@ function Box({ title, texte, duration, image, date, location, description }) {
 
   return (
     <div
-      className={`${styles.box} grid grid-cols-1 md:grid-cols-3 gap-8 p-6 w-full rounded-xl border transition-all duration-500 cursor-pointer`}
+      className={`${styles.box} items-center grid grid-cols-1 md:grid-cols-3 gap-8 p-6 w-full rounded-xl border transition-all duration-500 cursor-pointer`}
       data-aos="fade-up"
       data-aos-duration={duration}
       onClick={toggleExpand}
       role="button"
       tabIndex={0}
-      onKeyDown={(e) => e.key === 'Enter' && toggleExpand()}
+      onKeyDown={(e) => e.key === "Enter" && toggleExpand()}
     >
       <div className="col-span-2 order-last md:order-first">
         <div className="p-6">
@@ -45,7 +45,7 @@ function Box({ title, texte, duration, image, date, location, description }) {
         </div>
       </div>
       <div
-        className={`relative bg-white p-6 rounded overflow-hidden order-first md:order-last ${styles.imageWrap}`}
+        className={`relative justify-self-center lg:justify-self-end bg-white p-6 rounded overflow-hidden order-first md:order-last ${styles.imageWrap}`}
       >
         {image.map((img, i) => (
           <img key={i} className={styles.image} src={img.src} alt={img.alt} />

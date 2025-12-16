@@ -50,8 +50,10 @@ function Projets() {
       <main className="pt-[64px]">
         <HeroContenu
           titre="Mes Projets"
-          usePattern={true}
-          altImage="Image de fond des projets"
+          imageMobile="/images/hero_projets-mobile.jpg"
+          imageTablet="/images/hero_projets-tablet.jpg"
+          imageDesktop="/images/hero_projets-desktop.jpg"
+          altImage="Projets"
         />
 
         {/* Add your project sections here */}
