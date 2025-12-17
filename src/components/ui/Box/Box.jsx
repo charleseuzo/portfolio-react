@@ -1,22 +1,16 @@
 import styles from "./Box.module.css";
-import { useState } from "react";
 
-function Box({ title, texte, duration, image, date, location, description }) {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
-  };
+function Box({ title, texte, duration, image, date, location, description, isExpanded, onToggle }) {
 
   return (
     <div
       className={`${styles.box} items-center grid grid-cols-1 md:grid-cols-3 gap-8 p-6 w-full rounded-xl border transition-all duration-500 cursor-pointer`}
       data-aos="fade-up"
       data-aos-duration={duration}
-      onClick={toggleExpand}
+      onClick={onToggle}
       role="button"
       tabIndex={0}
-      onKeyDown={(e) => e.key === "Enter" && toggleExpand()}
+      onKeyDown={(e) => e.key === "Enter" && onToggle()}
     >
       <div className="col-span-2 order-last md:order-first">
         <div className="p-6">

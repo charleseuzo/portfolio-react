@@ -31,13 +31,27 @@ function Apropos() {
               À propos de moi
               {/* <span className="block h-1 w-full mt-2 bg-gradient-to-r from-[#B4C9DB] via-[#8AA6C1] to-[#4F6F8A] rounded-full animate-pulse"></span> */}
             </h2>
-
             <p className="text-lg leading-relaxed text-white/90">
-              Développeur Web polyvalent avec plus de 4 ans d'expérience en
-              intégration front-end, développement WordPress, gestion de
-              serveurs et optimisation de sites. Actuellement en
-              perfectionnement sur les technologies IA (Orchids, Lovable, agents
-              IA) et la librairie JavaScript React.js.
+              Développeur et intégrateur Web basé dans la région de Québec, je
+              conçois des sites fiables, performants et bien structurés, en
+              gardant toujours une vision globale des projets.
+            </p>
+            <p>
+              Issu d'une formation en informatique appliquée et complétée par
+              une certification en cybersécurité, j'ai développé une solide
+              capacité d'analyse, un grand souci du détail et une approche
+              orientée solutions. J'interviens autant sur l'intégration
+              front-end que sur le développement WordPress, la mise en ligne, la
+              gestion d'hébergement, les noms de domaine, la maintenance et la
+              sécurité.
+            </p>
+            <p>
+              Polyvalent et autonome, je travaille avec différentes plateformes
+              et technologies (WordPress, sites statiques, boutiques en ligne,
+              JavaScript, React) et je m'intéresse activement aux technologies
+              IA. Curieux et toujours en apprentissage, j'aime collaborer avec
+              des gens qui cherchent des solutions efficaces, durables et bien
+              pensées.
             </p>
           </div>
         </div>

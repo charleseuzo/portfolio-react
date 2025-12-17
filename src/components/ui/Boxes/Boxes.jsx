@@ -1,7 +1,14 @@
 import styles from "./Boxes.module.css";
 import Box from "../Box/Box";
+import { useState } from "react";
 
 function Boxes({ boxesData }) {
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const handleToggle = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
+
   return (
     <div
       className={`${styles.boxes} flex flex-wrap content-center justify-between items-start space-y-10`}
@@ -16,6 +23,8 @@ function Boxes({ boxesData }) {
           date={box.date}
           location={box.location}
           description={box.description}
+          isExpanded={expandedIndex === index}
+          onToggle={() => handleToggle(index)}
         />
       ))}
     </div>

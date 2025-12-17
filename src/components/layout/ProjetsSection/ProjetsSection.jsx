@@ -32,18 +32,19 @@ function ProjetsSection() {
           Mes projets
         </h2>
 
-        <div className={styles.flexContainer} data-aos="fade-up" data-aos-delay="100">
+        <div
+          className={`${styles.flexContainer} lg:justify-between`}
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           {projetsPreview.map((projet) => (
             <div key={projet.id} className={styles.projetWrapper}>
               <ProjetCard projet={projet} />
             </div>
           ))}
-          
+
           <div className={styles.ctaWrapper}>
-            <Link
-              to="/projets/"
-              className={styles.ctaButton}
-            >
+            <Link to="/projets/" className={styles.ctaButton}>
               Voir tous mes projets
             </Link>
           </div>

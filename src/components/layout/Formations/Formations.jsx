@@ -13,7 +13,7 @@ const sampleFormations = [
       alt: "Baccalauréat en Démographie et géographie - Université de Montréal",
     },
     description:
-      "Études en démographie et géographie à l'Université de Montréal.",
+      "Ce programme m'a permis d'acquérir des compétences en analyse de données, en statistiques, en géomatique et en recherche sociale.",
   },
   {
     school_name: "Université de Montréal",
@@ -25,7 +25,7 @@ const sampleFormations = [
       alt: "Certificat en informatique appliquée - Université de Montréal",
     },
     description:
-      "Études en démographie et géographie à l'Université de Montréal.",
+      "Dans ce programme, j'ai pu apprendre les bases de la programmation, du développement web, les bases de données et des systèmes d'information.",
   },
   {
     school_name: "Cégep Garneau",
@@ -33,11 +33,11 @@ const sampleFormations = [
     programme: "Certification collégiale en cybersécurité",
     date: "2024",
     image: {
-      src: "./images/Icone-Cegep-Garneau.png",
+      src: "./images/Icone_Cegep-Garneau.png",
       alt: "Certification collégiale en cybersécurité - Cégep Garneau",
     },
     description:
-      "Études en démographie et géographie à l'Université de Montréal.",
+      "Ce programme m'a permis de développer des compétences essentielles pour  la protection, la sécurité et l'intégrité des actifs informatiques et informationnels d'une organisation.",
   },
 ];
 
