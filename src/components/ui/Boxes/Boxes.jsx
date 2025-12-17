@@ -12,6 +12,7 @@ function Boxes({ boxesData }) {
   return (
     <div
       className={`${styles.boxes} flex flex-wrap content-center justify-between items-start space-y-10`}
+      onMouseLeave={() => setExpandedIndex(null)}
     >
       {boxesData.map((box, index) => (
         <Box
