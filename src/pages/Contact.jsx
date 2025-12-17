@@ -47,7 +47,7 @@ function Contact() {
       />
 
       <Header />
-      <main className="pt-[64px] bg-black min-h-screen">
+      <main className="pt-[64px] min-h-screen">
         <HeroContenu
           titre="Contactez-moi"
           imageMobile="/images/hero_contact-mobile.jpg"
