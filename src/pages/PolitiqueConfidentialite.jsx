@@ -1,18 +1,38 @@
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
+import HeroContenu from "../components/layout/HeroContenu/HeroContenu";
 import Container from "../components/layout/Container";
 
 function PolitiqueConfidentialite() {
   return (
     <>
+      <link
+        rel="canonical"
+        href="https://charleseuzo.github.io/portfolio-react/politique-de-confidentialite/"
+      />
+
+      <title></title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <meta property="og:title" content="" />
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="" />
+      <meta property="og:image" content="" />
+      <meta property="og:url" content="" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="" />
+      <meta name="twitter:description" content="" />
+      <meta name="twitter:image" content="" />
+
       <Header />
-      <main className="pt-[64px]">
-        <Container className="pt-16 pb-5">
-          <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-bold relative w-fit">
-            Politique de Confidentialité
-            <span className="block h-1 w-full mt-2 bg-gradient-to-r from-[#B4C9DB] via-[#8AA6C1] to-[#4F6F8A] rounded-full animate-pulse"></span>
-          </h1>
-        </Container>
+      <main className="pt-[64px] min-h-screen">
+        <HeroContenu
+          titre="Politique de confidentialité"
+          imageMobile="/images/hero_politique-mobile.jpg"
+          imageTablet="/images/hero_politique-tablet.jpg"
+          imageDesktop="/images/hero_politique-desktop.jpg"
+          altImage="Politique de confidentialité"
+        />
 
         <Container className="py-12">
           <div className="prose prose-invert max-w-4xl">

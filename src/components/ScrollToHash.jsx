@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 
 // Scroll to hash with offset to account for fixed header.
 // Keeps trying briefly if the target element isn't yet in the DOM.
+// Also scrolls to top when navigating to a new page without hash.
 export default function ScrollToHash({ headerOffset = 64 }) {
   const location = useLocation();
 
@@ -10,7 +11,12 @@ export default function ScrollToHash({ headerOffset = 64 }) {
     if (!location) return;
 
     const hash = window.location.hash;
-    if (!hash) return;
+    
+    // Si pas de hash, scroll vers le haut de la page
+    if (!hash) {
+      window.scrollTo({ top: 0, behavior: "instant" });
+      return;
+    }
 
     const id = hash.replace("#", "");
     let attempts = 0;

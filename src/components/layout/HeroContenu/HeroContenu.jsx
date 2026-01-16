@@ -11,6 +11,20 @@ function HeroContenu({
   usePattern = false,
   children,
 }) {
+  // Ajouter BASE_URL aux chemins relatifs pour la production
+  const getFullPath = (path) => {
+    if (!path) return path;
+    // Si le chemin commence par / mais n'est pas une URL complète
+    if (path.startsWith("/") && !path.startsWith("//")) {
+      return `${import.meta.env.BASE_URL}${path.slice(1)}`;
+    }
+    return path;
+  };
+
+  const fullImageMobile = getFullPath(imageMobile);
+  const fullImageTablet = getFullPath(imageTablet);
+  const fullImageDesktop = getFullPath(imageDesktop);
+
   return (
     <section
       className={`${styles.heroContenu} ${
@@ -22,14 +36,14 @@ function HeroContenu({
       {!useGradient && !usePattern && (
         <>
           <picture>
-            {imageDesktop && (
-              <source media="(min-width:1024px)" srcSet={imageDesktop} />
+            {fullImageDesktop && (
+              <source media="(min-width:1024px)" srcSet={fullImageDesktop} />
             )}
-            {imageTablet && (
-              <source media="(min-width:640px)" srcSet={imageTablet} />
+            {fullImageTablet && (
+              <source media="(min-width:640px)" srcSet={fullImageTablet} />
             )}
             <img
-              src={imageMobile || imageDesktop || imageTablet}
+              src={fullImageMobile || fullImageDesktop || fullImageTablet}
               alt={altImage}
               className="absolute inset-0 w-full h-full object-cover"
               loading="lazy"

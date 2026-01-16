@@ -22,7 +22,7 @@ const dataBox = [
     title: "Programmeur/intégrateur de sites web chez Constella",
     texte: constella,
     duration: "1000",
-    image: [{ src: "./images/logo-constella.svg", alt: "Constella" }],
+    image: [{ src: "./images/logo-constella.jpg", alt: "Constella" }],
     date: "Juin 2021 - Mai 2023",
     location: "Mont-Laurier",
     description:
